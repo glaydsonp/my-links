@@ -1,0 +1,27 @@
+.main {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__header {
+    font-size: 2rem;
+  }
+
+  &__content {
+    .links-list {
+      list-style-type: none;
+      text-align: center;
+      width: 15vw;
+
+      li {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+  &__footer {
+    display: none;
+  }
+}

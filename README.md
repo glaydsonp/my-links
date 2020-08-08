@@ -2,7 +2,7 @@
 
 The project was put together using Parcel Bundler.
 
-The CSS is written in SCSS and the JS code is writen in TypeScript using OOP.
+The CSS is written in SCSS with TailwindCSS for some general styles and the JS code is writen in TypeScript using OOP.
 
 ---
 

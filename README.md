@@ -1,6 +1,7 @@
 # Personal Site Project
 
 The project was put together using Parcel Bundler.
+
 The CSS is written in SCSS and the JS code is writen in TypeScript using OOP.
 
 ---

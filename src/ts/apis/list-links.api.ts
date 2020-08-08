@@ -1,30 +1,11 @@
 import { IMyLinks } from "../interfaces/links.interface";
-import { resolve } from "path";
+import data from "../../../links.json";
 
 export class LoadLinksListApi {
-  myLinks: IMyLinks[] = [
-    {
-      id: 1,
-      url: "http://gpdev.live/",
-      description: "Site",
-    },
-    {
-      id: 2,
-      url: "https://twitter.com/glaydsonp",
-      description: "Twitter",
-    },
-    {
-      id: 3,
-      url: "https://www.instagram.com/glaydsonp/",
-      description: "Instagram",
-    },
-    {
-      id: 4,
-      url: "http://blog.glaydsonp.com/",
-      description: "Blog",
-    },
-  ];
-  constructor() {}
+  myLinks: IMyLinks[] = [];
+  constructor() {
+    this.onInit();
+  }
 
   onInit() {
     this.loadLinks();
@@ -36,7 +17,9 @@ export class LoadLinksListApi {
    *
    * @memberof LoadLinksListApi
    */
-  loadLinks() {}
+  loadLinks() {
+    this.myLinks = data;
+  }
 
   getLinks(): Promise<IMyLinks[]> {
     return new Promise<IMyLinks[]>((resolve, reject) => resolve(this.myLinks));

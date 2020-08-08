@@ -28,17 +28,22 @@ class Main {
   generateHtml(myLinks: IMyLinks[]) {
     myLinks.some((link) => {
       const listItem = document.createElement("li");
-
       const a = document.createElement("a");
+
+      listItem.id = `list-item-${link.id}`;
       a.href = link.url;
       a.target = "_blank";
       a.className =
         "bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-full inline-block";
-      a.innerHTML = link.description;
 
-      listItem.id = `list-item-${link.id}`;
+      if (link.fa_icon_class) {
+        const i = document.createElement("i");
+        i.className = `${link.fa_icon_class}`;
+        a.append(i);
+      }
+
+      a.append(link.description);
       listItem.append(a);
-
       this.linksList.appendChild(listItem);
     });
   }

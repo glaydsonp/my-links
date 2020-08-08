@@ -16,3 +16,9 @@ To build your on project based on this one, follow these steps:
    `npm run dev` or `yarn dev`
 4. To build the app to run in production mode use:
    `npm run build` or `yarn build`
+
+---
+
+# Setting up the links to your stuff
+
+It's as simple as opening the `links.json` file that is in the root directory and changing up the description, url and/or Font-Awesome Icon reference.

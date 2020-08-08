@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "url": "http://gpdev.live/",
+    "description": "Site",
+    "fa_icon_class": "fa fa-sign-out"
+  },
+  {
+    "id": 2,
+    "url": "https://twitter.com/glaydsonp",
+    "description": "Twitter",
+    "fa_icon_class": "fa fa-twitter"
+  },
+  {
+    "id": 3,
+    "url": "https://www.instagram.com/glaydsonp/",
+    "description": "Instagram",
+    "fa_icon_class": "fa fa-instagram"
+  },
+  {
+    "id": 4,
+    "url": "http://blog.glaydsonp.com/",
+    "description": "Blog",
+    "fa_icon_class": "fa fa-rss"
+  }
+]
